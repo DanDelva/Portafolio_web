@@ -1,5 +1,5 @@
 //Objetos: atributos y metodos
-//en js se puede crear objetos sin necesisad de tener una clase
+//en js se puede crear objetos sin necesidad de tener una clase
 const persona = {
     nombre:'Goku',
     Apellidos: 'perez',
@@ -17,10 +17,13 @@ const persona2 = {
     }
 }
 let personas = [persona,persona2]
-console.log(personas[0].saludar());
+
+for(let i = 0; i < personas.length; i++){
+    console.log(personas[i].saludar());
+}
 
 let tabla='';
-persona.nombre = 'pablo';
+persona.nombre = 'Goku';
 for(let i = 0; i<personas.length; i++){
 tabla += '<tr><td>'+(i+1)+'</td><td>'
 +personas[i].nombre+'</td><td>'
@@ -28,3 +31,4 @@ tabla += '<tr><td>'+(i+1)+'</td><td>'
 +personas[i].edad+'</td><tr>'
 }
 document.getElementById('tabla').innerHTML = tabla;
+
