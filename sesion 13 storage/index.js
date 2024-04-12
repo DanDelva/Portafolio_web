@@ -9,4 +9,4 @@ nuevonombre.value=' ';
 });
 let nombreLocal = storage.obtener('usuario');
 document.querySelector('#nom').innerHTML = nombreLocal;
-storage.limpiar();
+//storage.limpiar();
